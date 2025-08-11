@@ -1,3 +1,4 @@
+import 'package:date_time_picker/date_time_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,6 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
+      home: DateTimeScreen(),
     );
   }
 }
